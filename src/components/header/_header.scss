@@ -1,24 +1,76 @@
-header {
-  background-color: #89f7fe;
-  height: 80px;
+.header {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 
-  span {
-    padding-right: 20px;
-  }
-
-  a {
-    color: #000;
-    text-decoration: none;
-
-    &:not(:last-child) {
-      margin-right: 20px;
-    }
-    &:hover {
-      border-bottom: 1px solid #000;
-    }
-  }
+  padding-top: 33px;
+  padding-bottom: 33px;
 }
 
+.header-link {
+  position: absolute;
 
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.header-link-box {
+  position: relative;
+}
+
+.header-link:hover {
+  opacity: .7;
+}
+
+.header-link:active {
+  opacity: .4;
+}
+
+.header-nav-link {
+  margin-right: 15px;
+
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+
+  color: #333333;
+}
+
+.header-nav-link:hover {
+  color: #008752;
+}
+
+.header-nav-link:active {
+  opacity: .5;
+  
+  color: #333333;
+}
+
+.header-nav-list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+
+  padding-left: 25px;
+}
+
+.header-contacts-list {
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.header-tel {
+  font-weight: 800;
+  font-size: 17px;
+  line-height: 20px;
+
+  color: #95459A;
+
+  margin-right: 24px;
+}

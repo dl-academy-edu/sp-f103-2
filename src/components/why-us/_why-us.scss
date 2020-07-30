@@ -1,0 +1,42 @@
+.why-us {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+
+  margin-top: 110px;
+  margin-bottom: 80px;
+}
+
+.why-us-title {
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 72px;
+
+  color: #005DAB;
+
+  margin-top: 9px;
+  margin-bottom: 33px;
+}
+
+.why-us-text {
+  font-size: 18px;
+  line-height: 28px;
+
+  color: #000000;
+
+  margin: 24px 0;
+}
+
+.why-us-button {
+  margin: 20px 0;
+}
+
+.why-us-box {
+  width: 480px;
+}
+
+.why-us-img {
+  margin-left: auto;
+  box-shadow: 110px 99px 0px 0px rgba(0,135,82,1);
+  margin-bottom: 99px;
+}

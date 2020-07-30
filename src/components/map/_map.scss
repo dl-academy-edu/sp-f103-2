@@ -1,0 +1,47 @@
+
+.map {
+  background-image: url("/static/images/map.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height: 426px;
+
+  position: relative;
+}
+
+
+.map-popup {
+  padding: 34px 44px 43px;
+
+  position: absolute;
+  top: 57px;
+
+  background-color: #008752;
+  width: 380px;
+}
+
+.map-popup-title {
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 36px;
+
+  color: #FFFFFF;
+
+  margin-top: 0;
+  margin-bottom: 17px;
+}
+
+.map-popup-text {
+  font-size: 15px;
+  line-height: 18px;
+
+  color: #FFFFFF;
+
+  margin-top: 17px;
+  margin-bottom: 23px;
+}
+
+.map-popup-button {
+  margin-top: 23px;
+}

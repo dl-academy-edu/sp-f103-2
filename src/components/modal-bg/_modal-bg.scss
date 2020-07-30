@@ -1,0 +1,59 @@
+.modal-bg {
+  display: none;
+
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  background-color: rgba(149, 69, 154, 0.9);;
+}
+
+.modal-bg_open {
+  display: flex;
+}
+
+.modal-window {
+  width: 680px;
+
+  padding: 50px;
+
+  margin: auto;
+
+  background-color: #EEEEEE;
+
+  position: relative;
+}
+
+.button-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+
+  width: 15px;
+  height: 15px;
+
+  border: none;
+}
+
+.button-close::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 15px;
+  width: 2px;
+  background-color: #121212;
+  transform: rotate(45deg);
+}
+
+.button-close::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 15px;
+  width: 2px;
+  background-color: #121212;
+  transform: rotate(-45deg);
+}

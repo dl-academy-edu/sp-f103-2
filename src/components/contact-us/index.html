@@ -1,0 +1,84 @@
+<section class="contact-us">
+    <h1 class="contact-us-title">Contact Us</h1>
+    <form class="contact-us-form" action="/pages/contact-us/index.html">
+        <div class="form-row">
+            <div class="form-cell-50">
+                <label class="form-lable mt0">
+                    <input class="input-text " type="text" name="name" placeholder="Ivan Ivanov">
+                    <span class="input-label-text">Name</span>
+                </label>
+            </div>
+            <div class="form-cell-50">
+                <label class="form-lable mt0">
+                    <input class="input-text " type="tel" name="phone" value="8800">
+                    <span class="input-label-text">Phone</span>
+                </label>
+            </div>
+        </div>
+        <label class="form-lable">
+            <input class="input-text" type="email" name="email">
+            <span class="input-label-text">E-mail</span>
+        </label>
+        <fieldset class="form-fieldset">
+            <legend class="form-lable">Payment Methods</legend>
+            <ul class="form-list">
+                <li>
+                    <label class="form-lable-checkbox">
+                        <input class="input-checkbox hidden" type="checkbox" name="paymentMethods" value="cash">
+                        <span class="input-label-checkbox">Сash</span>
+                        <span class="input-checkbox-checker"></span>
+                    </label>
+                </li>
+                <li>
+                    <label class="form-lable-checkbox">
+                        <input class="input-checkbox hidden" type="checkbox" name="paymentMethods" value="creditСard"
+                               disabled>
+                        <span class="input-label-checkbox">Сredit Сard</span>
+                        <span class="input-checkbox-checker"></span>
+                    </label>
+                </li>
+                <li>
+                    <label class="form-lable-checkbox">
+                        <input class="input-checkbox hidden" type="checkbox" name="paymentMethods" value="Receipt">
+                        <span class="input-label-checkbox">Receipt</span>
+                        <span class="input-checkbox-checker"></span>
+                    </label>
+                </li>
+            </ul>
+        </fieldset>
+        <label class="form-lable">
+            <input class="input-text" type="text" name="city-of-birth">
+            <span class="input-label-text">City of Birth</span>
+        </label>
+        <fieldset class="form-fieldset">
+            <legend class="form-lable">Do you need a report on the services provided?</legend>
+            <ul class="form-list">
+                <li>
+                    <label class="form-lable-radio">
+                        <input class="input-radio hidden" type="radio" name="need" value="yes">
+                        <span class="input-label-radio">Yes</span>
+                        <span class="input-radio-checker"></span>
+
+                    </label>
+                </li>
+                <li>
+                    <label class="form-lable-radio">
+                        <input class="input-radio hidden" type="radio" name="need" value="no" disabled>
+                        <span class="input-label-radio">No</span>
+                        <span class="input-radio-checker"></span>
+
+                    </label>
+                </li>
+            </ul>
+        </fieldset>
+        <label class="form-lable">
+            <textarea class="form-textarea" name="message" cols="30" rows="10"></textarea>
+            <span class="input-label-text">Message</span>
+        </label>
+        @@include('./link/index.html', {
+            "class": "form-button",
+            "text": "SUBMIT",
+            "type": "submit"
+        })
+    </form>
+</section>
