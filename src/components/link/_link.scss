@@ -1,3 +1,5 @@
+@import "../colors";
+
 .button {
   padding: 11px;
 
@@ -10,7 +12,7 @@
   text-align: center;
   text-transform: uppercase;
 
-  background-color: #008752;
+  background-color: $c_green;
 
   color: #FFFFFF;
 
@@ -22,22 +24,21 @@
 }
 
 .button:hover {
-  background-color: #26CD8B;
+  background-color: $c_green--light;
 }
 
-
 .button:active {
-  background-color: #005232;
+  background-color: $c_green--dark;
 }
 
 .button_purple {
-  background-color: #95459A;
+  background-color: $c_purple;
 }
 
 .button_purple:hover {
-  background-color: #D665DD;
+  background-color: $c_purple--light;
 }
 
 .button_purple:active {
-  background-color: #722A77;
+  background-color: $c_purple--dark;
 }

@@ -1,3 +1,5 @@
+@import "../colors";
+
 .why-us {
   display: flex;
   flex-wrap: wrap;
@@ -5,38 +7,38 @@
 
   margin-top: 110px;
   margin-bottom: 80px;
-}
 
-.why-us-title {
-  font-weight: 900;
-  font-size: 72px;
-  line-height: 72px;
+  &__box {
+    width: 480px;
+  }
 
-  color: #005DAB;
+  &__title {
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 72px;
 
-  margin-top: 9px;
-  margin-bottom: 33px;
-}
+    color: $c_blue;
 
-.why-us-text {
-  font-size: 18px;
-  line-height: 28px;
+    margin-top: 9px;
+    margin-bottom: 33px;
+  }
 
-  color: #000000;
+  &__text {
+    font-size: 18px;
+    line-height: 28px;
 
-  margin: 24px 0;
-}
+    color: $c_black;
 
-.why-us-button {
-  margin: 20px 0;
-}
+    margin: 24px 0;
+  }
 
-.why-us-box {
-  width: 480px;
-}
+  &__button {
+    margin: 20px 0;
+  }
 
-.why-us-img {
-  margin-left: auto;
-  box-shadow: 110px 99px 0px 0px rgba(0,135,82,1);
-  margin-bottom: 99px;
+  &__img {
+    margin-left: auto;
+    box-shadow: 110px 99px 0 0 rgba($c_green, 1);
+    margin-bottom: 99px;
+  }
 }

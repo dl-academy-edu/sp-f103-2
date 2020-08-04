@@ -1,24 +1,36 @@
 <header class="header container">
-    <div class="header-link-box">
-        <img src="/static/images/logo.png" alt="logo">
-        <a class="header-link" href="/">
+    <div class="header__link-box">
+        <a class="header__link" href="/">
+            <img class="header__logo" src="/static/images/logo.png" alt="logo">
         </a>
     </div>
-    <nav class="header-nav">
-        <ul class="header-nav-list">
-            <li><a class="header-nav-link" href="#">Catalog</a></li>
-            <li><a class="header-nav-link" href="#">Servises</a></li>
-            <li><a class="header-nav-link" href="#">Blog</a></li>
-            <li><a class="header-nav-link" href="#">About us</a></li>
+
+    <nav class="header__nav">
+        <ul class="header__nav-list">
+            <li class="header__nav-item">
+                <a class="header__nav-link" href="#">Catalog</a>
+            </li>
+            <li class="header__nav-item">
+                <a class="header__nav-link" href="#">Services</a>
+            </li>
+            <li class="header__nav-item">
+                <a class="header__nav-link" href="#">Blog</a>
+            </li>
+            <li class="header__nav-item">
+                <a class="header__nav-link" href="#">About us</a>
+            </li>
         </ul>
     </nav>
-    <ul class="header-contacts-list">
-        <li><a class="header-tel" href="tel:+7194319698">719-431-9698</a></li>
-        <li>
+
+    <ul class="header__contacts-list">
+        <li class="header__contacts-item">
+            <a class="header__contacts-phone" href="tel:+7194319698">719-431-9698</a>
+        </li>
+        <li class="header__contacts-item">
             @@include('./link/index.html', {
-                "link": "/pages/contact-us/index.html",
-                "text": "Contact Us",
-                "type": "link"
+            "link": "/pages/contact-us/index.html",
+            "text": "Contact Us",
+            "type": "link"
             })
         </li>
     </ul>

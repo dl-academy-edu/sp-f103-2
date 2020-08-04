@@ -1,3 +1,4 @@
+@import "../colors";
 
 .map {
   background-image: url("/static/images/map.jpg");
@@ -8,40 +9,50 @@
   height: 426px;
 
   position: relative;
-}
 
+  &__popup {
+    padding: 34px 44px 43px;
 
-.map-popup {
-  padding: 34px 44px 43px;
+    position: absolute;
+    top: 57px;
 
-  position: absolute;
-  top: 57px;
+    background-color: $c_green;
+    width: 380px;
+  }
 
-  background-color: #008752;
-  width: 380px;
-}
+  &__popup-title {
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 36px;
 
-.map-popup-title {
-  font-weight: 900;
-  font-size: 30px;
-  line-height: 36px;
+    color: $c_white;
 
-  color: #FFFFFF;
+    margin-top: 0;
+    margin-bottom: 17px;
+  }
 
-  margin-top: 0;
-  margin-bottom: 17px;
-}
+  &__popup-text,
+  &__popup-link {
+    font-size: 15px;
+    line-height: 18px;
 
-.map-popup-text {
-  font-size: 15px;
-  line-height: 18px;
+    color: $c_white;
 
-  color: #FFFFFF;
+    margin-top: 17px;
+    margin-bottom: 23px;
+  }
 
-  margin-top: 17px;
-  margin-bottom: 23px;
-}
+  &__popup-link {
+    &:hover {
+      opacity: 0.7;
+    }
 
-.map-popup-button {
-  margin-top: 23px;
+    &:active  {
+      opacity: 0.5;
+    }
+  }
+
+  &__popup-button {
+    margin-top: 23px;
+  }
 }

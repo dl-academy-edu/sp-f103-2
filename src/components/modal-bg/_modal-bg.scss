@@ -1,3 +1,5 @@
+@import "../colors";
+
 .modal-bg {
   display: none;
 
@@ -7,7 +9,43 @@
   left: 0;
   right: 0;
 
-  background-color: rgba(149, 69, 154, 0.9);;
+  background-color: rgba($c_purple, 0.9);
+
+  &__button-submit {
+
+  }
+
+  &__button-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+
+    width: 15px;
+    height: 15px;
+
+    border: none;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      height: 15px;
+      width: 2px;
+      background-color: #121212;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      height: 15px;
+      width: 2px;
+      background-color: #121212;
+      transform: rotate(-45deg);
+    }
+  }
 }
 
 .modal-bg_open {
@@ -21,39 +59,7 @@
 
   margin: auto;
 
-  background-color: #EEEEEE;
+  background-color: $c_gray;
 
   position: relative;
-}
-
-.button-close {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  cursor: pointer;
-
-  width: 15px;
-  height: 15px;
-
-  border: none;
-}
-
-.button-close::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  height: 15px;
-  width: 2px;
-  background-color: #121212;
-  transform: rotate(45deg);
-}
-
-.button-close::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  height: 15px;
-  width: 2px;
-  background-color: #121212;
-  transform: rotate(-45deg);
 }

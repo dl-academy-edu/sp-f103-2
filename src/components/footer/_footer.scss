@@ -1,26 +1,27 @@
+@import "../colors";
 
 .footer {
-  background-color: #00559D;
+  background-color: $c_blue;
 
   padding-top: 53px;
   padding-bottom: 54px;
-}
 
-.footer-title {
-  font-weight: 900;
-  font-size: 40px;
-  line-height: 53px;
+  &__content {
+    display: flex;
+    justify-content: space-between;
 
-  color: #FFFFFF;
-  margin-top: 0;
-  margin-bottom: 0;
-}
+    flex-wrap: wrap;
+  }
 
-.footer-content {
-  display: flex;
-  justify-content: space-between;
+  &__title {
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 53px;
 
-  flex-wrap: wrap;
+    color: $c_white;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 
 .social-list {
@@ -30,21 +31,21 @@
   flex-wrap: wrap;
 
   margin: 0;
-}
 
-.social-link {
-  display: block;
+  &__link {
+    display: block;
 
-  margin-left: 15px;
+    margin-left: 15px;
 
-  width: 60px;
-  height: 58px;
-}
+    width: 60px;
+    height: 58px;
 
-.social-link:hover path {
-  fill: #60A7E3;
-}
+    &:hover path {
+      fill: $c_blue--light;
+    }
 
-.social-link:active path {
-  fill: #17354F;
+    &:active path {
+      fill: $c_blue--dark;
+    }
+  }
 }
