@@ -1,4 +1,5 @@
 @import "colors";
+@import "vars";
 
 %inputAndFieldsetLegend {
   font-size: 18px;
@@ -33,6 +34,8 @@
 
     margin-top: 6px;
 
+    transition: border $tr_duration $tr_easing;
+
     &:focus {
       border: 2px solid rgba($c_yellow, 0.5);
       outline: none;
@@ -46,6 +49,8 @@
   &__text {
     font-size: 18px;
     line-height: 22px;
+
+    transition: color $tr_duration $tr_easing;
 
     color: $c_gray--dark;
   }
@@ -90,6 +95,8 @@
     border: 2px solid rgba($c_black, 0.5);
 
     margin-top: 6px;
+
+    transition: border $tr_duration $tr_easing;
   }
 
   &__input:focus {
@@ -102,7 +109,7 @@
   }
 
   &__text {
-
+    transition: color $tr_duration $tr_easing;
   }
 }
 
@@ -120,6 +127,10 @@
   margin-top: 14px;
 
   &__input:checked ~ .checkbox__checker::before {
+    background-color: $c_purple;
+  }
+
+  &__checker::before {
     content: "";
 
     position: absolute;
@@ -128,8 +139,9 @@
     left: 1px;
     right: 1px;
     bottom: 1px;
+    transition: background-color $tr_duration $tr_easing;
 
-    background-color: $c_purple;
+    background-color: transparent;
   }
 
   &__input:disabled ~ .checkbox__checker,
@@ -153,6 +165,8 @@
     height: 21px;
 
     border: 2px solid rgba($c_black, 0.1);
+
+    transition: border $tr_duration $tr_easing, opacity $tr_duration $tr_easing;
   }
 }
 
@@ -167,6 +181,10 @@
   margin-right: 33px;
 
   &__input:checked ~ .radio__checked::before {
+    background-color: $c_purple;
+  }
+
+  .radio__checked::before {
     content: "";
 
     position: absolute;
@@ -175,9 +193,11 @@
     right: 3px;
     bottom: 3px;
 
-    background-color: $c_purple;
+    background-color: transparent;
 
     border-radius: 50%;
+
+    transition: background-color $tr_duration $tr_easing;
   }
 
   &__input:focus ~ .radio__checked {
@@ -204,6 +224,8 @@
     border-radius: 50%;
 
     position: relative;
+
+    transition: border $tr_duration $tr_easing, opacity $tr_duration $tr_easing;
   }
 }
 

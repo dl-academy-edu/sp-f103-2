@@ -1,3 +1,5 @@
+@import "../vars";
+
 .partners {
   margin-top: 80px;
   margin-bottom: 80px;
@@ -18,6 +20,7 @@
 
 .partner {
   opacity: 0.5;
+  transition: opacity $tr_duration $tr_easing;
 
   &:hover {
     opacity: 1;

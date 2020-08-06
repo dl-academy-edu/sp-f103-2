@@ -1,4 +1,5 @@
 @import "../colors";
+@import "../vars";
 
 .button {
   padding: 11px;
@@ -21,24 +22,25 @@
   border: none;
 
   cursor: pointer;
-}
+  transition: background-color $tr_duration $tr_easing;
 
-.button:hover {
-  background-color: $c_green--light;
-}
+  &:hover {
+    background-color: $c_green--light;
+  }
 
-.button:active {
-  background-color: $c_green--dark;
-}
+  &:active {
+    background-color: $c_green--dark;
+  }
 
-.button_purple {
-  background-color: $c_purple;
-}
+  &_purple {
+    background-color: $c_purple;
 
-.button_purple:hover {
-  background-color: $c_purple--light;
-}
+    &:hover {
+      background-color: $c_purple--light;
+    }
 
-.button_purple:active {
-  background-color: $c_purple--dark;
+    &:active {
+      background-color: $c_purple--dark;
+    }
+  }
 }

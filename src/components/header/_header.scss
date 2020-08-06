@@ -1,3 +1,6 @@
+@import "../colors";
+@import "../vars";
+
 .header {
   display: flex;
   align-items: center;
@@ -13,6 +16,7 @@
 
   &__link {
     display: block;
+    transition: all $tr_duration $tr_easing;
 
     &:hover {
       opacity: .7;
@@ -41,6 +45,8 @@
 
     color: #333333;
 
+    transition: color $tr_duration $tr_easing;
+
     &:hover {
       color: #008752;
     }
@@ -67,8 +73,18 @@
     font-size: 17px;
     line-height: 20px;
 
-    color: #95459A;
+    color: $c_purple;
 
     margin-right: 24px;
+
+    transition: color $tr_duration $tr_easing;
+
+    &:hover {
+      color: $c_purple--light;
+    }
+
+    &:active {
+      color: $c_purple--dark;
+    }
   }
 }
