@@ -16,7 +16,7 @@
 
   &__link {
     display: block;
-    transition: all $tr_duration $tr_easing;
+    transition: opacity $tr_duration $tr_easing;
 
     &:hover {
       opacity: .7;
