@@ -1,3 +1,6 @@
+@import "../mixins";
+@import "../vars";
+
 .poster {
   background-image: url("/static/images/poster.jpg");
   background-repeat: no-repeat;
@@ -6,6 +9,15 @@
 
   padding-top: 143px;
   padding-bottom: 286px;
+
+  @include media_interval($media_mobile, $media_tablet) {
+    padding-top: 57px;
+  }
+
+  @include media_interval(0, $media_mobile) {
+    padding-top: 50px;
+    padding-bottom: 375px;
+  }
 
   &__title {
     font-weight: 900;
@@ -16,6 +28,19 @@
 
     margin: 0;
     margin-top: 9px;
+    width: calc(100% / 12 * 11);
+
+    @include media_interval($media_mobile, $media_tablet) {
+      font-size: 60px;
+      line-height: 60px;
+      width: calc(100% / 12 * 8);
+    }
+
+    @include media_interval(0, $media_mobile) {
+      width: auto;
+      font-size: 36px;
+      line-height: 40px;
+    }
   }
 
   &__button {
@@ -28,5 +53,18 @@
     width: 360px;
 
     padding: 16px;
+
+    @include media_interval($media_mobile, $media_tablet) {
+      margin-top: 32px;
+      width: 296px;
+    }
+
+    @include media_interval(0, $media_mobile) {
+      margin-top: 25px;
+      padding: 13px;
+      width: 247px;
+      font-size: 18px;
+      line-height: 22px;
+    }
   }
 }

@@ -1,5 +1,6 @@
 @import "../colors";
 @import "../vars";
+@import "../mixins";
 
 .map {
   background-image: url("/static/images/map.jpg");
@@ -11,6 +12,14 @@
 
   position: relative;
 
+  @include media_interval($media_mobile, $media_tablet) {
+    height: 390px;
+  }
+
+  @include media_interval(0, $media_mobile) {
+    height: 534px;
+  }
+
   &__popup {
     padding: 34px 44px 43px;
 
@@ -19,6 +28,19 @@
 
     background-color: $c_green;
     width: 380px;
+
+    @include media_interval($media_mobile, $media_tablet) {
+      top: 73px;
+      padding: 24px 23px 26px 41px;
+      width: 354px;
+    }
+
+    @include media_interval(0, $media_mobile) {
+      top: 40px;
+      padding: 34px 44px 36px 20px;
+      width: 100%;
+      max-width: 335px;
+    }
   }
 
   &__popup-title {
@@ -30,6 +52,16 @@
 
     margin-top: 0;
     margin-bottom: 17px;
+
+    @include media_interval(0, $media_tablet) {
+      margin-bottom: 25px;
+      font-size: 24px;
+      line-height: 29px;
+    }
+
+    @include media_interval(0, $media_mobile) {
+      margin-bottom: 14px;
+    }
   }
 
   &__popup-text,
@@ -43,6 +75,16 @@
     margin-bottom: 23px;
   }
 
+  &__popup-text {
+    @include media_interval($media_mobile, $media_tablet) {
+      margin-bottom: 16px;
+    }
+
+    @include media_interval(0, $media_mobile) {
+      margin-top: 14px;
+    }
+  }
+
   &__popup-link {
     transition: opacity $tr_duration $tr_easing;
 
@@ -50,12 +92,17 @@
       opacity: 0.7;
     }
 
-    &:active  {
+    &:active {
       opacity: 0.5;
     }
   }
 
   &__popup-button {
     margin-top: 23px;
+
+    @include media_interval(0, $media_mobile) {
+      padding: 11px;
+      width: 217px;
+    }
   }
 }

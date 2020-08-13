@@ -1,15 +1,37 @@
 @import "../colors";
+@import "../mixins";
+@import "../vars";
 
 .why-us {
   display: flex;
-  flex-wrap: wrap;
   align-items: flex-start;
 
   margin-top: 110px;
   margin-bottom: 80px;
 
+  @include media_interval($media_mobile, $media_tablet) {
+    margin-top: 64px;
+    margin-bottom: 50px;
+  }
+
+  @include media_interval(0, $media_mobile) {
+    margin-top: 40px;
+    margin-bottom: 24px;
+    flex-direction: column-reverse;
+  }
+
   &__box {
-    width: 480px;
+    width: 50%;
+    padding-right: calc(100% / 12 / 2);
+
+    @include media_interval($media_mobile, $media_tablet) {
+      width: calc(100% / 12 * 6.5);
+    }
+
+    @include media_interval(0, $media_mobile) {
+      padding-right: 0;
+      width: 100%;
+    }
   }
 
   &__title {
@@ -21,6 +43,20 @@
 
     margin-top: 9px;
     margin-bottom: 33px;
+
+    @include media_interval($media_mobile, $media_tablet) {
+      font-size: 48px;
+      line-height: 48px;
+      margin-bottom: 0;
+    }
+
+    @include media_interval(0, $media_mobile) {
+      margin-top: 1px;
+      margin-bottom: 21px;
+      font-size: 36px;
+      line-height: 40px;
+      max-width: 220px;
+    }
   }
 
   &__text {
@@ -30,15 +66,51 @@
     color: $c_black;
 
     margin: 24px 0;
+
+    @include media_interval($media_mobile, $media_tablet) {
+      font-size: 16px;
+      line-height: 25px;
+    }
+
+    @include media_interval(0, $media_mobile) {
+      margin-top: 21px;
+      margin-bottom: 11px;
+      font-size: 14px;
+      line-height: 22px;
+    }
   }
 
   &__button {
     margin: 20px 0;
+
+    @include media_interval($media_mobile, $media_tablet) {
+      margin-top: 30px;
+    }
+
+    @include media_interval(0, $media_mobile) {
+      width: 160px;
+      margin-top: 11px;
+    }
   }
 
   &__img {
+    width: 50%;
     margin-left: auto;
     box-shadow: 110px 99px 0 0 rgba($c_green, 1);
     margin-bottom: 99px;
+
+    @include media_interval($media_mobile, $media_tablet) {
+      margin-top: 28px;
+      width: calc(100% / 12 * 5.2);
+      margin-left: 0;
+      margin-bottom: 0;
+      box-shadow: 42px 39px 0 0 rgba($c_green, 1);
+    }
+
+    @include media_interval(0, $media_mobile) {
+      width: 100%;
+      margin-bottom: 17px;
+      box-shadow: 247px 19px 0 0 rgba($c_green, 1);
+    }
   }
 }

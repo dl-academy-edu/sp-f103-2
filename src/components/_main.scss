@@ -1,3 +1,5 @@
+@import "mixins";
+@import "vars";
 
 body {
   font-family: 'Lato', sans-serif;
@@ -34,7 +36,11 @@ img {
 }
 
 .container {
-  max-width: 1200px;
-  padding: 0 10px;
+  max-width: 1300px;
+  padding: 0 60px;
   margin: 0 auto;
+
+  @include media_interval(0, $media_tablet) {
+    padding: 0 20px;
+  }
 }

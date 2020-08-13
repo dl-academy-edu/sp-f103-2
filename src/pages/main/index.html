@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
+<head>
+    <meta charset="UTF-8"/>
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
-    <link href="/common.css" rel="stylesheet" />
-    <link href="style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="/static/fonts/stylesheet.css" />
+    <link href="/common.css" rel="stylesheet"/>
+    <link href="style.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="/static/fonts/stylesheet.css"/>
     <link rel="shortcut icon" href="/static/images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
     <title>Главная</title>
-  </head>
-  <body>
-    @@include('header/index.html')
-    <main class="index-main">
-        @@include('poster/index.html')
-        @@include('services/index.html')
-        @@include('why-us/index.html')
-        @@include('partners/index.html')
-    </main>
-    @@include('map/index.html')
-    @@include('modal-bg/index.html')
-    @@include('footer/index.html')
-    <script src="scripts.js"></script>
-  </body>
+</head>
+<body>
+@@include('header/index.html')
+<main class="index-main">
+    @@include('poster/index.html')
+    @@include('services/index.html')
+    @@include('why-us/index.html')
+    @@include('partners/index.html')
+</main>
+@@include('map/index.html')
+@@include('modal-bg/index.html')
+@@include('footer/index.html')
+<script src="scripts.js"></script>
+</body>
 </html>

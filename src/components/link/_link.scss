@@ -1,4 +1,5 @@
 @import "../colors";
+@import "../mixins";
 @import "../vars";
 
 .button {
@@ -23,6 +24,15 @@
 
   cursor: pointer;
   transition: background-color $tr_duration $tr_easing;
+
+  @include media_interval(0, $media_tablet) {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  @include media_interval(0, $media_mobile) {
+    padding: 8px;
+  }
 
   &:hover {
     background-color: $c_green--light;
