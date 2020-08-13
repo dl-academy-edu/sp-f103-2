@@ -1,4 +1,5 @@
 @import "../../components/vars";
+@import "../../components/colors";
 
 @keyframes animation_message_left {
   0% {
@@ -97,7 +98,7 @@
     border-radius: 10px;
     animation-duration: 3s;
     animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(1,.19,0,.84);
+    animation-timing-function: cubic-bezier(1, .19, 0, .84);
     opacity: 0;
 
     &:not(:first-child) {
@@ -142,6 +143,57 @@
   @for $i from 1 through 5 {
     .chat__message_#{$i} {
       animation-delay: $i + s;
+    }
+  }
+}
+
+.svg-smile {
+  & * {
+    transition: transform $tr_duration $tr_easing;
+  }
+
+  &__body {
+    transition: fill $tr_duration $tr_easing;
+  }
+
+  &:hover {
+    .svg-smile {
+      &__eye-left {
+        transform: translateX(-1px) translateY(2px);
+      }
+
+      &__eye-right {
+        transform: translateX(1px) translateY(2px);
+      }
+
+      &__eyebrow-left {
+        transform: translateY(-3px);
+      }
+    }
+  }
+
+  &__smile:hover {
+    .svg-smile {
+
+      &__body {
+        fill: $c_green--light;
+      }
+
+      &__eye-left {
+        transform: translateX(1px) translateY(-2px);
+      }
+
+      &__eye-right {
+        transform: translateX(-1px) translateY(-2px);
+      }
+
+      &__eyebrow-left {
+        transform: translateY(0);
+      }
+
+      &__eyebrow-right {
+        transform: translateY(-3px);
+      }
     }
   }
 }
