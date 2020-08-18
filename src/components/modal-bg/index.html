@@ -1,28 +1,30 @@
 <div class="modal-bg modal_js">
-    <form action="/" class="modal-window">
-        <div class="form-row">
-            <div class="form-cell-50">
-                <label class="input mt0">
-                    <input class="input__input" type="text" name="name" placeholder="Ivan Ivanov">
-                    <span class="input__text">Name</span>
-                </label>
+    <form action="/" class="modal-bg__form modal-window">
+        <div class="modal-bg__form-inner">
+            <div class="form-row">
+                <div class="form-cell-50">
+                    <label class="input mt0">
+                        <input class="input__input" type="text" name="name" placeholder="Ivan Ivanov">
+                        <span class="input__text">Name</span>
+                    </label>
+                </div>
+                <div class="form-cell-50">
+                    <label class="input mt0">
+                        <input class="input__input" type="tel" name="phone" value="8800">
+                        <span class="input__text">Phone</span>
+                    </label>
+                </div>
             </div>
-            <div class="form-cell-50">
-                <label class="input mt0">
-                    <input class="input__input" type="tel" name="phone" value="8800">
-                    <span class="input__text">Phone</span>
-                </label>
-            </div>
+            <label class="input">
+                <input class="input__input" type="email" name="email">
+                <span class="input__text">E-mail</span>
+            </label>
+            <label class="input">
+                <input class="input__input" type="text" name="text">
+                <span class="input__text">Message</span>
+            </label>
+            <button class="modal-bg__button-submit form-button button" type="submit">SUBMIT</button>
+            <button class="modal-bg__button-close button-close_js" type="button" aria-label="exit"></button>
         </div>
-        <label class="input">
-            <input class="input__input" type="email" name="email">
-            <span class="input__text">E-mail</span>
-        </label>
-        <label class="input">
-            <input class="input__input" type="text" name="text">
-            <span class="input__text">Message</span>
-        </label>
-        <button class="modal-bg__button-submit form-button button" type="submit">SUBMIT</button>
-        <button class="modal-bg__button-close button-close_js" type="button" aria-label="exit"></button>
     </form>
 </div>

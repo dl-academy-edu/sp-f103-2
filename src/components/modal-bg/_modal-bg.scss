@@ -1,5 +1,13 @@
 @import "../colors";
 
+.modal-bg_open {
+  overflow: hidden;
+
+  .modal-bg {
+    display: flex;
+  }
+}
+
 .modal-bg {
   display: none;
 
@@ -10,6 +18,18 @@
   right: 0;
 
   background-color: rgba($c_purple, 0.9);
+
+  &__form {
+    width: 680px;
+    margin: auto;
+    padding: 20px;
+  }
+
+  &__form-inner {
+    padding: 50px;
+    background-color: $c_gray;
+    position: relative;
+  }
 
   &__button-submit {
 
@@ -46,20 +66,4 @@
       transform: rotate(-45deg);
     }
   }
-}
-
-.modal-bg_open {
-  display: flex;
-}
-
-.modal-window {
-  width: 680px;
-
-  padding: 50px;
-
-  margin: auto;
-
-  background-color: $c_gray;
-
-  position: relative;
 }

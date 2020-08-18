@@ -1,0 +1,42 @@
+<div class="mobile-menu">
+    <button class="mobile-menu__button-close-menu" id="js-button-close-menu">
+        <span class="hidden">Button close mobile menu</span>
+    </button>
+
+    <div class="mobile-menu__inner">
+        <img src="/static/images/logo.png" alt="Logo" class="mobile-menu__logo" width="160" height="72">
+        <nav class="mobile-menu__nav">
+            <ul class="mobile-menu__list">
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__link">Catalog</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__link">Services</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__link">Blog</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__link">About us</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#" class="mobile-menu__link">Chat</a>
+                </li>
+            </ul>
+        </nav>
+
+        <ul class="mobile-menu__contacts-list">
+            <li class="mobile-menu__contacts-item">
+                <a class="mobile-menu__contacts-phone" href="tel:+7194319698">719-431-9698</a>
+            </li>
+            <li class="mobile-menu__contacts-item">
+                @@include('./link/index.html', {
+                "link": "/pages/contact-us/index.html",
+                "text": "Contact Us",
+                "type": "link",
+                "class": "mobile-menu__contacts-link"
+                })
+            </li>
+        </ul>
+    </div>
+</div>

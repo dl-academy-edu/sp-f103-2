@@ -1,3 +1,7 @@
+@import "../../components/colors";
+@import "../../components/vars";
+@import "../../components/mixins";
+
 .contact-us {
   &__title {
     font-weight: 900;
@@ -17,8 +21,18 @@
 
     background-color: #EEEEEE;
 
-    width: 780px;
+    max-width: 780px;
+    width: 100%;
 
     margin: 56px auto 80px auto;
+
+
+    @include media_interval($media_mobile, $media_mobile-medium) {
+      padding: 50px 60px;
+    }
+
+    @include media_interval(0, $media_mobile) {
+      padding: 43px 25px;
+    }
   }
 }

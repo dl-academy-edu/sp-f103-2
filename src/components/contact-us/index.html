@@ -1,83 +1,86 @@
-<section class="contact-us">
-    <h1 class="contact-us__title">Contact Us</h1>
-    <form class="contact-us__form" action="/pages/contact-us/index.html">
-        <div class="form-row">
-            <div class="form-cell-50">
-                <label class="input mt0">
-                    <input class="input__input " type="text" name="name" placeholder="Ivan Ivanov">
-                    <span class="input__text">Name</span>
-                </label>
+<div class="container">
+    <section class="contact-us">
+        <h1 class="contact-us__title">Contact Us</h1>
+        <form class="contact-us__form" action="/pages/contact-us/index.html">
+            <div class="form-row">
+                <div class="form-cell-50">
+                    <label class="input mt0">
+                        <input class="input__input " type="text" name="name" placeholder="Ivan Ivanov">
+                        <span class="input__text">Name</span>
+                    </label>
+                </div>
+                <div class="form-cell-50">
+                    <label class="input mt0">
+                        <input class="input__input" type="tel" name="phone" value="8800">
+                        <span class="input__text">Phone</span>
+                    </label>
+                </div>
             </div>
-            <div class="form-cell-50">
-                <label class="input mt0">
-                    <input class="input__input" type="tel" name="phone" value="8800">
-                    <span class="input__text">Phone</span>
-                </label>
-            </div>
-        </div>
-        <label class="input">
-            <input class="input__input" type="email" name="email">
-            <span class="input__text">E-mail</span>
-        </label>
-        <fieldset class="fieldset">
-            <legend class="fieldset__legend">Payment Methods</legend>
-            <ul class="fieldset__list">
-                <li class="fieldset__item">
-                    <label class="checkbox">
-                        <input class="checkbox__input hidden" type="checkbox" name="paymentMethods" value="cash">
-                        <span class="checkbox__label">Сash</span>
-                        <span class="checkbox__checker"></span>
-                    </label>
-                </li>
-                <li class="fieldset__item">
-                    <label class="checkbox">
-                        <input class="checkbox__input hidden" type="checkbox" name="paymentMethods" value="creditСard"
-                               disabled>
-                        <span class="checkbox__label">Сredit Сard</span>
-                        <span class="checkbox__checker"></span>
-                    </label>
-                </li>
-                <li class="fieldset__item">
-                    <label class="checkbox">
-                        <input class="checkbox__input hidden" type="checkbox" name="paymentMethods" value="Receipt">
-                        <span class="checkbox__label">Receipt</span>
-                        <span class="checkbox__checker"></span>
-                    </label>
-                </li>
-            </ul>
-        </fieldset>
-        <label class="input">
-            <input class="input__input" type="text" name="city-of-birth">
-            <span class="input__text">City of Birth</span>
-        </label>
-        <fieldset class="fieldset">
-            <legend class="fieldset__legend">Do you need a report on the services provided?</legend>
-            <ul class="fieldset__list">
-                <li class="fieldset__item">
-                    <label class="radio">
-                        <input class="radio__input hidden" type="radio" name="need" value="yes">
-                        <span class="radio__label">Yes</span>
-                        <span class="radio__checked"></span>
+            <label class="input">
+                <input class="input__input" type="email" name="email">
+                <span class="input__text">E-mail</span>
+            </label>
+            <fieldset class="fieldset">
+                <legend class="fieldset__legend">Payment Methods</legend>
+                <ul class="fieldset__list">
+                    <li class="fieldset__item">
+                        <label class="checkbox">
+                            <input class="checkbox__input hidden" type="checkbox" name="paymentMethods" value="cash">
+                            <span class="checkbox__label">Сash</span>
+                            <span class="checkbox__checker"></span>
+                        </label>
+                    </li>
+                    <li class="fieldset__item">
+                        <label class="checkbox">
+                            <input class="checkbox__input hidden" type="checkbox" name="paymentMethods"
+                                   value="creditСard"
+                                   disabled>
+                            <span class="checkbox__label">Сredit Сard</span>
+                            <span class="checkbox__checker"></span>
+                        </label>
+                    </li>
+                    <li class="fieldset__item">
+                        <label class="checkbox">
+                            <input class="checkbox__input hidden" type="checkbox" name="paymentMethods" value="Receipt">
+                            <span class="checkbox__label">Receipt</span>
+                            <span class="checkbox__checker"></span>
+                        </label>
+                    </li>
+                </ul>
+            </fieldset>
+            <label class="input">
+                <input class="input__input" type="text" name="city-of-birth">
+                <span class="input__text">City of Birth</span>
+            </label>
+            <fieldset class="fieldset">
+                <legend class="fieldset__legend">Do you need a report on the services provided?</legend>
+                <ul class="fieldset__list">
+                    <li class="fieldset__item">
+                        <label class="radio">
+                            <input class="radio__input hidden" type="radio" name="need" value="yes">
+                            <span class="radio__label">Yes</span>
+                            <span class="radio__checked"></span>
 
-                    </label>
-                </li>
-                <li class="fieldset__item">
-                    <label class="radio">
-                        <input class="radio__input hidden" type="radio" name="need" value="no" disabled>
-                        <span class="radio__label">No</span>
-                        <span class="radio__checked"></span>
-                    </label>
-                </li>
-            </ul>
-        </fieldset>
-        <label class="textarea">
-            <textarea class="textarea__input" name="message" cols="30" rows="10"></textarea>
-            <span class="textarea__text">Message</span>
-        </label>
-        @@include('./link/index.html', {
-        "class": "form-button",
-        "text": "SUBMIT",
-        "type": "submit"
-        })
-    </form>
-</section>
+                        </label>
+                    </li>
+                    <li class="fieldset__item">
+                        <label class="radio">
+                            <input class="radio__input hidden" type="radio" name="need" value="no" disabled>
+                            <span class="radio__label">No</span>
+                            <span class="radio__checked"></span>
+                        </label>
+                    </li>
+                </ul>
+            </fieldset>
+            <label class="textarea">
+                <textarea class="textarea__input" name="message" cols="30" rows="10"></textarea>
+                <span class="textarea__text">Message</span>
+            </label>
+            @@include('./link/index.html', {
+            "class": "form-button",
+            "text": "SUBMIT",
+            "type": "submit"
+            })
+        </form>
+    </section>
+</div>

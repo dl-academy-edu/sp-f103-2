@@ -1,5 +1,6 @@
-@import "colors";
-@import "vars";
+@import "./colors";
+@import "./vars";
+@import "./mixins";
 
 %inputAndFieldsetLegend {
   font-size: 18px;
@@ -73,6 +74,7 @@
     margin: 0;
 
     display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -232,6 +234,11 @@
 .form-row {
   display: flex;
   justify-content: space-between;
+
+  @include media_interval(0, $media_mobile-medium) {
+    margin: -7px;
+    flex-wrap: wrap;
+  }
 }
 
 .form-cell-100 {
@@ -239,13 +246,23 @@
 }
 
 .form-cell-50 {
-  width: 280px;
+  width: calc(50% - 10px);
+
+  @include media_interval(0, $media_mobile-medium) {
+    padding: 7px;
+    width: 100%;
+  }
 }
 
 .mt0 {
   margin-top: 0;
 }
 
-.form-button {
+.button.form-button {
   margin-top: 20px;
+
+  @include media_interval(0, $media_mobile-medium) {
+    width: 100%;
+    padding: 13px;
+  }
 }
