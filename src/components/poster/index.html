@@ -1,4 +1,15 @@
 <section class="poster">
+    <picture class="poster__background-wrapper">
+        <source srcset="/static/images/poster-desktop.jpg, /static/images/poster-desktop_2x.jpg 2x"
+                media="(min-width: 1024px)">
+        <source srcset="/static/images/poster-tablet.jpg"
+                media="(min-width: 768px) and (max-width: 1023px)">
+        <source srcset="/static/images/poster-mobile.jpg"
+                media="(max-width: 767px)">
+        <img src="/static/images/poster-desktop.jpg"
+             alt="Poster background image"
+             class="poster__background">
+    </picture>
     <div class="poster__inner container">
         <h1 class="poster__title">The world’s leading cleaning company</h1>
         @@include('link/index.html', {

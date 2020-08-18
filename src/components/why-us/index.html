@@ -14,5 +14,15 @@
             "type": "link"
         })
     </div>
-    <img class="why-us__img" src="/static/images/why-us.jpg" alt="why us">
+    <picture class="why-us__img-wrapper">
+        <source srcset="/static/images/why-us-desktop.jpg, /static/images/why-us-desktop_2x.jpg 2x"
+                media="(min-width: 1024px)">
+        <source srcset="/static/images/why-us-tablet.jpg"
+                media="(min-width: 768px) and (max-width: 1023px)">
+        <source srcset="/static/images/why-us-mobile.jpg"
+                media="(max-width: 767px)">
+        <img src="@@src-desktop"
+             alt="Why us"
+             class="why-us__img">
+    </picture>
 </section>

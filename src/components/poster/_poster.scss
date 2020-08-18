@@ -2,11 +2,7 @@
 @import "../vars";
 
 .poster {
-  background-image: url("/static/images/poster.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-
+  position: relative;
   padding-top: 143px;
   padding-bottom: 286px;
 
@@ -17,6 +13,16 @@
   @include media_interval(0, $media_mobile) {
     padding-top: 50px;
     padding-bottom: 375px;
+  }
+
+  &__background {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   &__title {
