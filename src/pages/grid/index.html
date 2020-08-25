@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8"/>
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link href="/common.css" rel="stylesheet"/>
+    <link href="style.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="/static/fonts/stylesheet.css"/>
+    <link rel="shortcut icon" href="/static/images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <title>Grid</title>
+</head>
+<body>
+@@include('header/index.html')
+<main class="index-main">
+    <div class="grid-page container">
+        <h1 class="grid-page__title">Grid page</h1>
+
+        <div class="grid">
+            <div class="grid__children grid__purple">#A322F1</div>
+            <div class="grid__children grid__gray">#C4C4C4</div>
+            <div class="grid__children grid__blue">#22CCF1</div>
+            <div class="grid__children grid__orange">#F19E22</div>
+            <div class="grid__children grid__red">#EF6A6A</div>
+            <div class="grid__children grid__green">#008752</div>
+        </div>
+    </div>
+</main>
+@@include('footer/index.html')
+</body>
+</html>
